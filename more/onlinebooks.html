@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Articles | NexLrn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(255, 235, 198);
+
+            /* book bg */
+        }
+        .navbar {
+            height: 60px;
+            background-color: #232f3e;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+        }
+        .nav-logo .logo {
+            width: 50px;
+            height: 50px;
+            background: url('/images/logo.png') no-repeat center/contain;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #232f3e;
+        }
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .article-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #0001;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .article-card:hover {
+            box-shadow: 0 4px 16px #0002;
+            transform: translateY(-4px) scale(1.02);
+        }
+        .article-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color:#f39d33;
+            margin-bottom: 10px;
+        }
+        .article-meta {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .article-desc {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 18px;
+        }
+        .article-actions {
+            display: flex;
+            gap: 12px;
+        }
+        .btn {
+            background: #232f3e;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 0.97rem;
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .btn:hover {
+            background: #febd69;
+            color: #232f3e;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 0 5px; }
+            .article-card { padding: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <h2 style="margin-left: 18px;">Online Books ~ NexLrn</h2>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Featured Tech Books</h1>
+        <div class="articles-grid">
+            <div class="article-card">
+                <div>
+                    <div class="article-title"> C++ Programming Language </div>
+                    <div class="article-meta"> A short book for breif reference</div>
+                    <div class="article-desc"><img src="/images/c++.jpeg" alt="C++" style="width:100%; height: 350px;; border-radius:8px; margin-top:10px;">
+                        This book is intended to help C++ programmers write better code, faster. It describes the core language and its standard library, with an emphasis on modern C++ (C++11 and later). It includes practical examples and best practices for effective C++ programming.
+                        
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <a href="/pdf/cpp .pdf" class="btn" download>
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <a href="/pdf/cpp .pdf" class="btn">
+                        <i class="fa-solid fa-eye"></i> Read Online
+                    </a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div>
+                    <div class="article-title">Java</div>
+                    <div class="article-meta">A short book for breif reference</div>
+                    <div class="article-desc"><img src="/images/java.png" alt="Java" style="width:100%; height: 350px;; border-radius:8px; margin-top:10px;">
+                        This book provides a comprehensive introduction to the Java programming language and its core libraries. It covers fundamental concepts, object-oriented programming, exception handling, and GUI development using Swing. The book includes numerous examples and exercises to help readers build practical Java applications.
+                        
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <a href="/pdf/Java.pdf" class="btn" download>
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <a href="/pdf/Java.pdf" class="btn">
+                        <i class="fa-solid fa-eye"></i> Read Online
+                    </a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div>
+                    <div class="article-title">Python</div>
+                    <div class="article-meta">A short book for breif reference</div>
+                    <div class="article-desc"><img src="/images/python.jpeg" alt="Python" style="width:100%; height: 350px;; border-radius:8px; margin-top:10px;">
+                        This book offers a comprehensive introduction to Python programming, covering fundamental concepts, data
+                        
+                    </div>
+                    <div class="article-desc">
+                        A discrete mathematics course has more than one purpose. Students should learn a particular set of mathematical facts and how to apply them; more importantly, such a course should teach students how to think logically and mathematically. To achieve these goals, this text stresses mathematical reasoning and the different ways problems are solved.
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <a href="/pdf/Python.pdf" class="btn" download>
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <a href="/pdf/Python.pdf" class="btn" target="_blank">
+                        <i class="fa-solid fa-eye"></i> Read Online
+                    </a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div>
+                    <div class="article-title">Digital Design</div>
+                    <div class="article-meta">A short book for breif reference</div>
+                    <div class="article-desc"><img src="/images/digital.jpeg" alt="Digital Design" style="width:100%; height: 350px;; border-radius:8px; margin-top:10px;">
+                        This book provides a comprehensive introduction to digital design, covering fundamental concepts such as logic gates, combinational and sequential circuits, and finite state machines. It includes practical examples and exercises to help readers understand the principles of digital systems and their applications in modern technology.
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <a href="/pdf/Digital.pdf" class="btn" download>
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <a href="/pdf/Digital.pdf" class="btn">
+                        <i class="fa-solid fa-eye"></i> Read Online
+                    </a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div>
+                    <div class="article-title">HTML</div>
+                    <div class="article-meta">A short book for breif reference</div>
+                    <div class="article-desc"><img src="/images/html.jpeg" alt="HTML" style="width:100%; height: 350px;; border-radius:8px; margin-top:10px;">
+                        This book provides a comprehensive introduction to HTML, covering fundamental concepts such as elements, attributes, and document structure. It includes practical examples and exercises to help readers understand how to create and design web pages using HTML.
+                        
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <a href="/pdf/HTML.pdf" class="btn" download>
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <a href="/pdf/HTML.pdf" class="btn">
+                        <i class="fa-solid fa-eye"></i> Read Online
+                    </a>
+                </div>
+            </div>
+            <div class="article-card">
+                <div>
+                    <div class="article-title">CSS</div>
+                    <div class="article-meta">A short book for breif reference</div>
+                    <div class="article-desc"><img src="/images/css.jpeg" alt="CSS" style="width:100%; height: 350px;; border-radius:8px; margin-top:10px;">
+                        This book provides a comprehensive introduction to CSS, covering fundamental concepts such as selectors, properties, and layout techniques. It includes practical examples and exercises to help readers understand how to style and design web pages using CSS.
+                        
+                    </div>
+                </div>
+                <div class="article-actions">
+                    <a href="/pdf/CSS.pdf" class="btn" download>
+                        <i class="fa-solid fa-download"></i> Download PDF
+                    </a>
+                    <a href="/pdf/CSS.pdf" class="btn">
+                        <i class="fa-solid fa-eye"></i> Read Online
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
